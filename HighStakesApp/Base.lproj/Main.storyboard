@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="HighStakesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5m-Fb-rcx" customClass="HSAButton" customModule="HighStakesApp" customModuleProvider="target">
+                                <rect key="frame" x="271" y="30" width="88" height="34"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.33725490200000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="fGD-O8-H2R"/>
+                                    <constraint firstAttribute="height" constant="34" id="n5J-5a-w4t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Log out"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.60833177023945584" green="0.29718262308843535" blue="0.25404317978367347" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logOutButtonTouchUpInsideSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dm6-eP-XqR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi! lets go play..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfF-P6-oPT">
+                                <rect key="frame" x="123" y="37" width="129" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.93877208232879639" green="0.43303656578063965" blue="0.41676503419876099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="chY-zy-3th">
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N4C-Bu-Sai">
+                                    <rect key="frame" x="0.0" y="85" width="375" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="About the game">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="aboutTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iX1-rg-XP2"/>
+                                    </connections>
+                                </button>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GameCell" rowHeight="57" id="KAl-3S-Dnc" customClass="GameCell" customModule="HighStakesApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KAl-3S-Dnc" id="XTd-yE-ECl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp8-kn-5Xm" customClass="HSAGameButton" customModule="HighStakesApp" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="6" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="22M-i5-Yw7"/>
+                                                        <constraint firstAttribute="width" constant="44" id="Fuz-Qb-3A2"/>
+                                                    </constraints>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1r-HX-jjX" customClass="HSAGameButton" customModule="HighStakesApp" customModuleProvider="target">
+                                                    <rect key="frame" x="76" y="6" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="O2Q-Pc-lBz"/>
+                                                        <constraint firstAttribute="width" constant="44" id="wid-BK-xw5"/>
+                                                    </constraints>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eK-B3-ePz" customClass="HSAGameButton" customModule="HighStakesApp" customModuleProvider="target">
+                                                    <rect key="frame" x="136" y="6" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="A2B-uB-YD0"/>
+                                                        <constraint firstAttribute="height" constant="44" id="qQh-0y-fUu"/>
+                                                    </constraints>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETC-XT-1ie" customClass="HSAGameButton" customModule="HighStakesApp" customModuleProvider="target">
+                                                    <rect key="frame" x="196" y="6" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="CNd-SO-6T2"/>
+                                                        <constraint firstAttribute="height" constant="44" id="SfX-dn-6AV"/>
+                                                    </constraints>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yj8-Mc-cDd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="16" height="57"/>
+                                                    <color key="backgroundColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyO-77-KlC">
+                                                    <rect key="frame" x="60" y="0.0" width="16" height="57"/>
+                                                    <color key="backgroundColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jmp-bo-JFJ">
+                                                    <rect key="frame" x="120" y="0.0" width="16" height="56.5"/>
+                                                    <color key="backgroundColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HsQ-b3-fIM">
+                                                    <rect key="frame" x="180" y="0.0" width="16" height="57"/>
+                                                    <color key="backgroundColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERY-Lu-jBA">
+                                                    <rect key="frame" x="240" y="0.0" width="16" height="57"/>
+                                                    <color key="backgroundColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkY-xI-oRY">
+                                                    <rect key="frame" x="296" y="0.0" width="16" height="57"/>
+                                                    <color key="backgroundColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbd-5S-awb" customClass="HSAButton" customModule="HighStakesApp" customModuleProvider="target">
+                                                    <rect key="frame" x="312" y="13.5" width="55" height="30"/>
+                                                    <color key="backgroundColor" red="0.3411764705882353" green="0.73333333333333328" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="CPs-12-2wa"/>
+                                                        <constraint firstAttribute="width" constant="55" id="EMY-oX-EWB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <state key="normal" title="Test"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.2627450980392157" green="0.60784313725490191" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHK-lh-e6e">
+                                                    <rect key="frame" x="256" y="8" width="40" height="40"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3f-a7-1Nm" customClass="HSAGameButton" customModule="HighStakesApp" customModuleProvider="target">
+                                                            <rect key="frame" x="7" y="7" width="11" height="11"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ts3-1x-ejt" customClass="HSAGameButton" customModule="HighStakesApp" customModuleProvider="target">
+                                                            <rect key="frame" x="23" y="7" width="11" height="11"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utD-Xz-uPh" customClass="HSAGameButton" customModule="HighStakesApp" customModuleProvider="target">
+                                                            <rect key="frame" x="7" y="22" width="11" height="11"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="we1-zB-r4U" customClass="HSAGameButton" customModule="HighStakesApp" customModuleProvider="target">
+                                                            <rect key="frame" x="23" y="22" width="11" height="11"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="njv-lO-rXa"/>
+                                                        <constraint firstAttribute="width" constant="40" id="wA7-y9-lZS"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Tbd-5S-awb" firstAttribute="trailing" secondItem="XTd-yE-ECl" secondAttribute="trailingMargin" id="14E-gA-wAv"/>
+                                                <constraint firstAttribute="bottom" secondItem="ERY-Lu-jBA" secondAttribute="bottom" id="2Hu-Pg-Boe"/>
+                                                <constraint firstItem="dkY-xI-oRY" firstAttribute="top" secondItem="XTd-yE-ECl" secondAttribute="top" id="7NY-om-BOJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="HsQ-b3-fIM" secondAttribute="bottom" id="9IS-25-OjT"/>
+                                                <constraint firstItem="Jmp-bo-JFJ" firstAttribute="leading" secondItem="M1r-HX-jjX" secondAttribute="trailing" id="DaH-5x-2NX"/>
+                                                <constraint firstItem="eyO-77-KlC" firstAttribute="leading" secondItem="lp8-kn-5Xm" secondAttribute="trailing" id="Ddr-5q-Tqx"/>
+                                                <constraint firstItem="M1r-HX-jjX" firstAttribute="centerY" secondItem="XTd-yE-ECl" secondAttribute="centerY" id="EOP-Vw-kgA"/>
+                                                <constraint firstItem="HsQ-b3-fIM" firstAttribute="top" secondItem="XTd-yE-ECl" secondAttribute="top" id="GDb-xv-FOV"/>
+                                                <constraint firstItem="ETC-XT-1ie" firstAttribute="leading" secondItem="HsQ-b3-fIM" secondAttribute="trailing" id="Hhe-Y4-nng"/>
+                                                <constraint firstItem="Yj8-Mc-cDd" firstAttribute="top" secondItem="XTd-yE-ECl" secondAttribute="top" id="IaC-4o-RRW"/>
+                                                <constraint firstItem="YHK-lh-e6e" firstAttribute="leading" secondItem="ERY-Lu-jBA" secondAttribute="trailing" id="Iyh-pi-N9I"/>
+                                                <constraint firstItem="7eK-B3-ePz" firstAttribute="leading" secondItem="Jmp-bo-JFJ" secondAttribute="trailing" id="L6I-Ce-neQ"/>
+                                                <constraint firstItem="eyO-77-KlC" firstAttribute="width" secondItem="Yj8-Mc-cDd" secondAttribute="width" id="LCu-qB-XPZ"/>
+                                                <constraint firstItem="ETC-XT-1ie" firstAttribute="centerY" secondItem="XTd-yE-ECl" secondAttribute="centerY" id="OnI-co-8a3"/>
+                                                <constraint firstItem="dkY-xI-oRY" firstAttribute="width" secondItem="Yj8-Mc-cDd" secondAttribute="width" id="PfL-E6-3TO"/>
+                                                <constraint firstAttribute="bottom" secondItem="eyO-77-KlC" secondAttribute="bottom" id="Sot-Fl-jEM"/>
+                                                <constraint firstItem="Tbd-5S-awb" firstAttribute="leading" secondItem="dkY-xI-oRY" secondAttribute="trailing" id="ULB-zz-g8P"/>
+                                                <constraint firstItem="HsQ-b3-fIM" firstAttribute="width" secondItem="Yj8-Mc-cDd" secondAttribute="width" id="VbQ-NN-EGz"/>
+                                                <constraint firstItem="eyO-77-KlC" firstAttribute="top" secondItem="XTd-yE-ECl" secondAttribute="top" id="VgA-dM-YoV"/>
+                                                <constraint firstItem="Jmp-bo-JFJ" firstAttribute="top" secondItem="XTd-yE-ECl" secondAttribute="top" id="X0i-ig-bTb"/>
+                                                <constraint firstAttribute="bottom" secondItem="dkY-xI-oRY" secondAttribute="bottom" id="X18-0r-lPD"/>
+                                                <constraint firstItem="ERY-Lu-jBA" firstAttribute="width" secondItem="Yj8-Mc-cDd" secondAttribute="width" id="bdY-G0-3gi"/>
+                                                <constraint firstItem="lp8-kn-5Xm" firstAttribute="leading" secondItem="Yj8-Mc-cDd" secondAttribute="trailing" id="cC1-D4-Cfg"/>
+                                                <constraint firstItem="Yj8-Mc-cDd" firstAttribute="leading" secondItem="XTd-yE-ECl" secondAttribute="leading" id="dFg-Of-1nh"/>
+                                                <constraint firstItem="dkY-xI-oRY" firstAttribute="leading" secondItem="YHK-lh-e6e" secondAttribute="trailing" id="fMZ-JE-XuI"/>
+                                                <constraint firstItem="ERY-Lu-jBA" firstAttribute="leading" secondItem="ETC-XT-1ie" secondAttribute="trailing" id="fNj-iV-Ypd"/>
+                                                <constraint firstAttribute="bottom" secondItem="Jmp-bo-JFJ" secondAttribute="bottom" id="ftt-Q0-KkP"/>
+                                                <constraint firstItem="ERY-Lu-jBA" firstAttribute="top" secondItem="XTd-yE-ECl" secondAttribute="top" id="hRV-bT-dvY"/>
+                                                <constraint firstItem="lp8-kn-5Xm" firstAttribute="centerY" secondItem="XTd-yE-ECl" secondAttribute="centerY" id="ivX-nQ-cmm"/>
+                                                <constraint firstItem="Jmp-bo-JFJ" firstAttribute="width" secondItem="Yj8-Mc-cDd" secondAttribute="width" id="jEw-GP-Kbf"/>
+                                                <constraint firstItem="M1r-HX-jjX" firstAttribute="leading" secondItem="eyO-77-KlC" secondAttribute="trailing" id="pHQ-Ho-ag8"/>
+                                                <constraint firstItem="HsQ-b3-fIM" firstAttribute="leading" secondItem="7eK-B3-ePz" secondAttribute="trailing" id="swe-AB-sN9"/>
+                                                <constraint firstItem="7eK-B3-ePz" firstAttribute="centerY" secondItem="XTd-yE-ECl" secondAttribute="centerY" id="ueG-R2-b8A"/>
+                                                <constraint firstAttribute="bottom" secondItem="Yj8-Mc-cDd" secondAttribute="bottom" id="vFh-mC-fS5"/>
+                                                <constraint firstItem="YHK-lh-e6e" firstAttribute="centerY" secondItem="XTd-yE-ECl" secondAttribute="centerY" id="wJ9-O2-ZbT"/>
+                                                <constraint firstItem="Tbd-5S-awb" firstAttribute="centerY" secondItem="XTd-yE-ECl" secondAttribute="centerY" id="wzj-g1-axz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="firstButton" destination="lp8-kn-5Xm" id="lXJ-4Q-8vK"/>
+                                            <outlet property="firstResultButton" destination="c3f-a7-1Nm" id="6Hc-nf-qOO"/>
+                                            <outlet property="fourthButton" destination="ETC-XT-1ie" id="8xu-kd-gYj"/>
+                                            <outlet property="fourthResultButton" destination="we1-zB-r4U" id="rmR-t0-7Zi"/>
+                                            <outlet property="secondButton" destination="M1r-HX-jjX" id="AXX-Ai-Vf2"/>
+                                            <outlet property="secondResultButton" destination="ts3-1x-ejt" id="trW-PS-E5l"/>
+                                            <outlet property="testButton" destination="Tbd-5S-awb" id="S6m-Un-lkv"/>
+                                            <outlet property="thirdButton" destination="7eK-B3-ePz" id="Idw-Sb-8tg"/>
+                                            <outlet property="thirdResultButton" destination="utD-Xz-uPh" id="aMP-8o-eyM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="PeS-WV-Gch"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eWW-7K-p5c"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prF-6E-0al" customClass="HSAButton" customModule="HighStakesApp" customModuleProvider="target">
+                                <rect key="frame" x="112.5" y="316.5" width="150" height="34"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.33725490200000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="NhC-xC-cau"/>
+                                    <constraint firstAttribute="width" constant="150" id="whl-Nd-85M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Start the game!"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.60833177019999995" green="0.29718262309999999" blue="0.25404317980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="newGameButtonTouchUpInsideSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eyi-Vu-TnA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="chY-zy-3th" secondAttribute="bottom" id="3Gm-d4-67r"/>
+                            <constraint firstAttribute="trailing" secondItem="chY-zy-3th" secondAttribute="trailing" id="6qM-A0-PuR"/>
+                            <constraint firstItem="GfF-P6-oPT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bx7-x6-yDT"/>
+                            <constraint firstItem="GfF-P6-oPT" firstAttribute="centerY" secondItem="z5m-Fb-rcx" secondAttribute="centerY" id="Scn-dt-WvZ"/>
+                            <constraint firstItem="z5m-Fb-rcx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="XvZ-0b-aoy"/>
+                            <constraint firstItem="chY-zy-3th" firstAttribute="top" secondItem="z5m-Fb-rcx" secondAttribute="bottom" constant="20" id="ZGv-a4-Adi"/>
+                            <constraint firstItem="prF-6E-0al" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gme-Yw-tPg"/>
+                            <constraint firstItem="z5m-Fb-rcx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GfF-P6-oPT" secondAttribute="trailing" constant="8" id="hf9-CB-RaV"/>
+                            <constraint firstItem="prF-6E-0al" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="huH-c8-OD0"/>
+                            <constraint firstItem="z5m-Fb-rcx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="paC-T9-EGB"/>
+                            <constraint firstItem="chY-zy-3th" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pw5-eW-gzM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="newGameButton" destination="prF-6E-0al" id="Kkf-sc-hmR"/>
+                        <outlet property="tableView" destination="chY-zy-3th" id="RdR-Tq-LDS"/>
+                        <outlet property="titleLabel" destination="GfF-P6-oPT" id="o8h-04-W6b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

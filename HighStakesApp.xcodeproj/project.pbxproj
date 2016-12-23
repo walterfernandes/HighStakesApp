@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A200CB51E0C5E12000E1F03 /* HSAGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A200CB41E0C5E12000E1F03 /* HSAGameButton.swift */; };
+		3A200CB71E0C6215000E1F03 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A200CB61E0C6215000E1F03 /* GameCell.swift */; };
+		3A62130C1E0A2ADE002F64D0 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3A62130B1E0A2ADE002F64D0 /* Cartfile */; };
+		3A62131B1E0A3236002F64D0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6213191E0A3236002F64D0 /* Bolts.framework */; };
+		3A62131C1E0A3236002F64D0 /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6213191E0A3236002F64D0 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A62131D1E0A3236002F64D0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A62131A1E0A3236002F64D0 /* Parse.framework */; };
+		3A62131E1E0A3236002F64D0 /* Parse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A62131A1E0A3236002F64D0 /* Parse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A6213201E0A3375002F64D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A62131F1E0A3375002F64D0 /* HomeViewController.swift */; };
+		3A821CDC1E0AB4C700F0A843 /* String+HSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A821CDB1E0AB4C700F0A843 /* String+HSA.swift */; };
+		3A821CDE1E0AC16F00F0A843 /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A821CDD1E0AC16F00F0A843 /* PKHUD.framework */; };
+		3A821CDF1E0AC16F00F0A843 /* PKHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A821CDD1E0AC16F00F0A843 /* PKHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A821CE11E0B090300F0A843 /* UIAlertController+HSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A821CE01E0B090300F0A843 /* UIAlertController+HSA.swift */; };
+		3ABA04391E0C3481006C45D8 /* MMGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA04381E0C3481006C45D8 /* MMGame.swift */; };
+		3AF4B6761E08BF320040C464 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4B6751E08BF320040C464 /* AppDelegate.swift */; };
+		3AF4B6781E08BF320040C464 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4B6771E08BF320040C464 /* LoginViewController.swift */; };
+		3AF4B67B1E08BF320040C464 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF4B6791E08BF320040C464 /* Main.storyboard */; };
+		3AF4B67D1E08BF320040C464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF4B67C1E08BF320040C464 /* Assets.xcassets */; };
+		3AF4B6801E08BF320040C464 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF4B67E1E08BF320040C464 /* LaunchScreen.storyboard */; };
+		3AF4B68B1E08BF320040C464 /* HighStakesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4B68A1E08BF320040C464 /* HighStakesAppTests.swift */; };
+		3AFFFC091E09A9E300B12F66 /* HighStakesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFFFC081E09A9E300B12F66 /* HighStakesAppUITests.swift */; };
+		3AFFFC111E09AABA00B12F66 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFFFC101E09AABA00B12F66 /* SignUpViewController.swift */; };
+		3AFFFC131E09ADAF00B12F66 /* HSAUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFFFC121E09ADAF00B12F66 /* HSAUser.swift */; };
+		3AFFFC151E09AECF00B12F66 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFFFC141E09AECF00B12F66 /* Login.storyboard */; };
+		3AFFFC181E09B8A700B12F66 /* HSAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFFFC171E09B8A700B12F66 /* HSAButton.swift */; };
+		3AFFFC1A1E09CC7B00B12F66 /* HSATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFFFC191E09CC7B00B12F66 /* HSATextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AF4B6871E08BF320040C464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AF4B66A1E08BF320040C464 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AF4B6711E08BF320040C464;
+			remoteInfo = HighStakesApp;
+		};
+		3AFFFC0B1E09A9E300B12F66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AF4B66A1E08BF320040C464 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AF4B6711E08BF320040C464;
+			remoteInfo = HighStakesApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A6213181E0A3165002F64D0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A821CDF1E0AC16F00F0A843 /* PKHUD.framework in Embed Frameworks */,
+				3A62131E1E0A3236002F64D0 /* Parse.framework in Embed Frameworks */,
+				3A62131C1E0A3236002F64D0 /* Bolts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A200CB41E0C5E12000E1F03 /* HSAGameButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSAGameButton.swift; sourceTree = "<group>"; };
+		3A200CB61E0C6215000E1F03 /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		3A62130B1E0A2ADE002F64D0 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		3A6213191E0A3236002F64D0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
+		3A62131A1E0A3236002F64D0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Carthage/Build/iOS/Parse.framework; sourceTree = "<group>"; };
+		3A62131F1E0A3375002F64D0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3A821CDB1E0AB4C700F0A843 /* String+HSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+HSA.swift"; sourceTree = "<group>"; };
+		3A821CDD1E0AC16F00F0A843 /* PKHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PKHUD.framework; path = Carthage/Build/iOS/PKHUD.framework; sourceTree = "<group>"; };
+		3A821CE01E0B090300F0A843 /* UIAlertController+HSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+HSA.swift"; sourceTree = "<group>"; };
+		3ABA04381E0C3481006C45D8 /* MMGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMGame.swift; sourceTree = "<group>"; };
+		3AF4B6721E08BF320040C464 /* HighStakesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighStakesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF4B6751E08BF320040C464 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AF4B6771E08BF320040C464 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3AF4B67A1E08BF320040C464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AF4B67C1E08BF320040C464 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AF4B67F1E08BF320040C464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AF4B6811E08BF320040C464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF4B6861E08BF320040C464 /* HighStakesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighStakesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF4B68A1E08BF320040C464 /* HighStakesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighStakesAppTests.swift; sourceTree = "<group>"; };
+		3AF4B68C1E08BF320040C464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AFFFC061E09A9E300B12F66 /* HighStakesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighStakesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AFFFC081E09A9E300B12F66 /* HighStakesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighStakesAppUITests.swift; sourceTree = "<group>"; };
+		3AFFFC0A1E09A9E300B12F66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AFFFC101E09AABA00B12F66 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3AFFFC121E09ADAF00B12F66 /* HSAUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSAUser.swift; sourceTree = "<group>"; };
+		3AFFFC141E09AECF00B12F66 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		3AFFFC171E09B8A700B12F66 /* HSAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSAButton.swift; sourceTree = "<group>"; };
+		3AFFFC191E09CC7B00B12F66 /* HSATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSATextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AF4B66F1E08BF320040C464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A821CDE1E0AC16F00F0A843 /* PKHUD.framework in Frameworks */,
+				3A62131D1E0A3236002F64D0 /* Parse.framework in Frameworks */,
+				3A62131B1E0A3236002F64D0 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF4B6831E08BF320040C464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AFFFC031E09A9E300B12F66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A62130A1E0A2915002F64D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AF4B6791E08BF320040C464 /* Main.storyboard */,
+				3AFFFC141E09AECF00B12F66 /* Login.storyboard */,
+				3AF4B67E1E08BF320040C464 /* LaunchScreen.storyboard */,
+				3A200CB61E0C6215000E1F03 /* GameCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3A62130D1E0A2D22002F64D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A821CDD1E0AC16F00F0A843 /* PKHUD.framework */,
+				3A6213191E0A3236002F64D0 /* Bolts.framework */,
+				3A62131A1E0A3236002F64D0 /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A821CE81E0C048600F0A843 /* Mastermind */ = {
+			isa = PBXGroup;
+			children = (
+				3ABA04381E0C3481006C45D8 /* MMGame.swift */,
+			);
+			name = Mastermind;
+			sourceTree = "<group>";
+		};
+		3AF4B6691E08BF320040C464 = {
+			isa = PBXGroup;
+			children = (
+				3AF4B6741E08BF320040C464 /* HighStakesApp */,
+				3AF4B6891E08BF320040C464 /* HighStakesAppTests */,
+				3AFFFC071E09A9E300B12F66 /* HighStakesAppUITests */,
+				3AF4B6731E08BF320040C464 /* Products */,
+				3A62130D1E0A2D22002F64D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3AF4B6731E08BF320040C464 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AF4B6721E08BF320040C464 /* HighStakesApp.app */,
+				3AF4B6861E08BF320040C464 /* HighStakesAppTests.xctest */,
+				3AFFFC061E09A9E300B12F66 /* HighStakesAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AF4B6741E08BF320040C464 /* HighStakesApp */ = {
+			isa = PBXGroup;
+			children = (
+				3A821CE81E0C048600F0A843 /* Mastermind */,
+				3AF4B6951E08BF8E0040C464 /* Controller */,
+				3AF4B6961E08BFB20040C464 /* Model */,
+				3A62130A1E0A2915002F64D0 /* View */,
+				3AFFFC161E09B6D300B12F66 /* Util */,
+				3AF4B6751E08BF320040C464 /* AppDelegate.swift */,
+				3AF4B67C1E08BF320040C464 /* Assets.xcassets */,
+				3AF4B6811E08BF320040C464 /* Info.plist */,
+				3A62130B1E0A2ADE002F64D0 /* Cartfile */,
+			);
+			path = HighStakesApp;
+			sourceTree = "<group>";
+		};
+		3AF4B6891E08BF320040C464 /* HighStakesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AF4B68A1E08BF320040C464 /* HighStakesAppTests.swift */,
+				3AF4B68C1E08BF320040C464 /* Info.plist */,
+			);
+			path = HighStakesAppTests;
+			sourceTree = "<group>";
+		};
+		3AF4B6951E08BF8E0040C464 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AF4B6771E08BF320040C464 /* LoginViewController.swift */,
+				3AFFFC101E09AABA00B12F66 /* SignUpViewController.swift */,
+				3A62131F1E0A3375002F64D0 /* HomeViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3AF4B6961E08BFB20040C464 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AFFFC121E09ADAF00B12F66 /* HSAUser.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3AFFFC071E09A9E300B12F66 /* HighStakesAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3AFFFC081E09A9E300B12F66 /* HighStakesAppUITests.swift */,
+				3AFFFC0A1E09A9E300B12F66 /* Info.plist */,
+			);
+			path = HighStakesAppUITests;
+			sourceTree = "<group>";
+		};
+		3AFFFC161E09B6D300B12F66 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3AFFFC191E09CC7B00B12F66 /* HSATextField.swift */,
+				3AFFFC171E09B8A700B12F66 /* HSAButton.swift */,
+				3A200CB41E0C5E12000E1F03 /* HSAGameButton.swift */,
+				3A821CDB1E0AB4C700F0A843 /* String+HSA.swift */,
+				3A821CE01E0B090300F0A843 /* UIAlertController+HSA.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AF4B6711E08BF320040C464 /* HighStakesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AF4B68F1E08BF320040C464 /* Build configuration list for PBXNativeTarget "HighStakesApp" */;
+			buildPhases = (
+				3AF4B66E1E08BF320040C464 /* Sources */,
+				3AF4B66F1E08BF320040C464 /* Frameworks */,
+				3AF4B6701E08BF320040C464 /* Resources */,
+				3A6213181E0A3165002F64D0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HighStakesApp;
+			productName = HighStakesApp;
+			productReference = 3AF4B6721E08BF320040C464 /* HighStakesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AF4B6851E08BF320040C464 /* HighStakesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AF4B6921E08BF320040C464 /* Build configuration list for PBXNativeTarget "HighStakesAppTests" */;
+			buildPhases = (
+				3AF4B6821E08BF320040C464 /* Sources */,
+				3AF4B6831E08BF320040C464 /* Frameworks */,
+				3AF4B6841E08BF320040C464 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AF4B6881E08BF320040C464 /* PBXTargetDependency */,
+			);
+			name = HighStakesAppTests;
+			productName = HighStakesAppTests;
+			productReference = 3AF4B6861E08BF320040C464 /* HighStakesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3AFFFC051E09A9E300B12F66 /* HighStakesAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AFFFC0F1E09A9E300B12F66 /* Build configuration list for PBXNativeTarget "HighStakesAppUITests" */;
+			buildPhases = (
+				3AFFFC021E09A9E300B12F66 /* Sources */,
+				3AFFFC031E09A9E300B12F66 /* Frameworks */,
+				3AFFFC041E09A9E300B12F66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AFFFC0C1E09A9E300B12F66 /* PBXTargetDependency */,
+			);
+			name = HighStakesAppUITests;
+			productName = HighStakesAppUITests;
+			productReference = 3AFFFC061E09A9E300B12F66 /* HighStakesAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AF4B66A1E08BF320040C464 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Walter Fernandes de Carvalho";
+				TargetAttributes = {
+					3AF4B6711E08BF320040C464 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 23P696Z8HF;
+						ProvisioningStyle = Automatic;
+					};
+					3AF4B6851E08BF320040C464 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 23P696Z8HF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3AF4B6711E08BF320040C464;
+					};
+					3AFFFC051E09A9E300B12F66 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 23P696Z8HF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3AF4B6711E08BF320040C464;
+					};
+				};
+			};
+			buildConfigurationList = 3AF4B66D1E08BF320040C464 /* Build configuration list for PBXProject "HighStakesApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AF4B6691E08BF320040C464;
+			productRefGroup = 3AF4B6731E08BF320040C464 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AF4B6711E08BF320040C464 /* HighStakesApp */,
+				3AF4B6851E08BF320040C464 /* HighStakesAppTests */,
+				3AFFFC051E09A9E300B12F66 /* HighStakesAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AF4B6701E08BF320040C464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A62130C1E0A2ADE002F64D0 /* Cartfile in Resources */,
+				3AFFFC151E09AECF00B12F66 /* Login.storyboard in Resources */,
+				3AF4B6801E08BF320040C464 /* LaunchScreen.storyboard in Resources */,
+				3AF4B67D1E08BF320040C464 /* Assets.xcassets in Resources */,
+				3AF4B67B1E08BF320040C464 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF4B6841E08BF320040C464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AFFFC041E09A9E300B12F66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AF4B66E1E08BF320040C464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ABA04391E0C3481006C45D8 /* MMGame.swift in Sources */,
+				3AF4B6781E08BF320040C464 /* LoginViewController.swift in Sources */,
+				3A821CDC1E0AB4C700F0A843 /* String+HSA.swift in Sources */,
+				3AF4B6761E08BF320040C464 /* AppDelegate.swift in Sources */,
+				3AFFFC1A1E09CC7B00B12F66 /* HSATextField.swift in Sources */,
+				3AFFFC181E09B8A700B12F66 /* HSAButton.swift in Sources */,
+				3AFFFC111E09AABA00B12F66 /* SignUpViewController.swift in Sources */,
+				3A821CE11E0B090300F0A843 /* UIAlertController+HSA.swift in Sources */,
+				3A6213201E0A3375002F64D0 /* HomeViewController.swift in Sources */,
+				3AFFFC131E09ADAF00B12F66 /* HSAUser.swift in Sources */,
+				3A200CB51E0C5E12000E1F03 /* HSAGameButton.swift in Sources */,
+				3A200CB71E0C6215000E1F03 /* GameCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF4B6821E08BF320040C464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF4B68B1E08BF320040C464 /* HighStakesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AFFFC021E09A9E300B12F66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFFFC091E09A9E300B12F66 /* HighStakesAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AF4B6881E08BF320040C464 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AF4B6711E08BF320040C464 /* HighStakesApp */;
+			targetProxy = 3AF4B6871E08BF320040C464 /* PBXContainerItemProxy */;
+		};
+		3AFFFC0C1E09A9E300B12F66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AF4B6711E08BF320040C464 /* HighStakesApp */;
+			targetProxy = 3AFFFC0B1E09A9E300B12F66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AF4B6791E08BF320040C464 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AF4B67A1E08BF320040C464 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AF4B67E1E08BF320040C464 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AF4B67F1E08BF320040C464 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AF4B68D1E08BF320040C464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AF4B68E1E08BF320040C464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AF4B6901E08BF320040C464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 23P696Z8HF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HighStakesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.walterfernandes.HighStakesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3AF4B6911E08BF320040C464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 23P696Z8HF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HighStakesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.walterfernandes.HighStakesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3AF4B6931E08BF320040C464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 23P696Z8HF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HighStakesAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.walterfernandes.HighStakesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HighStakesApp.app/HighStakesApp";
+			};
+			name = Debug;
+		};
+		3AF4B6941E08BF320040C464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 23P696Z8HF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HighStakesAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.walterfernandes.HighStakesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HighStakesApp.app/HighStakesApp";
+			};
+			name = Release;
+		};
+		3AFFFC0D1E09A9E300B12F66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 23P696Z8HF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HighStakesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.walterfernandes.HighStakesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HighStakesApp;
+			};
+			name = Debug;
+		};
+		3AFFFC0E1E09A9E300B12F66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 23P696Z8HF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HighStakesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.walterfernandes.HighStakesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HighStakesApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AF4B66D1E08BF320040C464 /* Build configuration list for PBXProject "HighStakesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF4B68D1E08BF320040C464 /* Debug */,
+				3AF4B68E1E08BF320040C464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AF4B68F1E08BF320040C464 /* Build configuration list for PBXNativeTarget "HighStakesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF4B6901E08BF320040C464 /* Debug */,
+				3AF4B6911E08BF320040C464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AF4B6921E08BF320040C464 /* Build configuration list for PBXNativeTarget "HighStakesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF4B6931E08BF320040C464 /* Debug */,
+				3AF4B6941E08BF320040C464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AFFFC0F1E09A9E300B12F66 /* Build configuration list for PBXNativeTarget "HighStakesAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AFFFC0D1E09A9E300B12F66 /* Debug */,
+				3AFFFC0E1E09A9E300B12F66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AF4B66A1E08BF320040C464 /* Project object */;
+}
